@@ -49,7 +49,7 @@ require 'includes/form_handlers/login_handler.php';
 					if(isset($_SESSION['log_email'])) {
 						echo $_SESSION['log_email'];
 					} 
-					?>" required>
+					?>" >
 					<br>
 					<input type="password" name="log_password" placeholder="Password">
 					<br>
@@ -69,7 +69,7 @@ require 'includes/form_handlers/login_handler.php';
 					if(isset($_SESSION['reg_fname'])) {
 						echo $_SESSION['reg_fname'];
 					} 
-					?>" required>
+					?>" >
 					<br>
 					<?php if(in_array("Your first name must be between 2 and 25 characters<br>", $error_array)) echo "Your first name must be between 2 and 25 characters<br>"; ?>
 					
